@@ -36,7 +36,7 @@ export function remainder(n9, n10) {
 // get the interger of the division
 
 export function integer(n11, n12) {
-    return Math.floor(n11 / n12);
+    return Math.round(n11 / n12);
 }
 
 
