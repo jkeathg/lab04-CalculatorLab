@@ -70,3 +70,50 @@ test('divide two numbers', (expect) =>{
 
     expect.equal(actual4, expected4);
 });
+
+
+// test remainder function
+
+
+import {remainder} from '../calculator.js';
+
+test('get remainder of', (expect) => {
+    const g = 10;
+    const h = 3;
+    const expected5 = 1;
+
+    const actual5 = remainder(g, h);
+
+    expect.equal(actual5, expected5);
+})
+
+// test interger function
+
+
+import {integer} from '../calculator.js';
+
+test('get integer of', (expect) => {
+    const i = 10;
+    const j = 3;
+    const expected6 = 3;
+
+    const actual6 = integer(i, j);
+
+    expect.equal(actual6, expected6);
+})
+
+
+// test pythagorean theorem function
+
+
+import {pythag} from '../calculator.js';
+
+test('get pythagorean therom of', (expect) => {
+    const k = 3;
+    const l = 4;
+    const expected7 = 25;
+
+    const actual7 = pythag(k, l);
+
+    expect.equal(actual7, expected7);
+})

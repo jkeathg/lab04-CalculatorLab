@@ -81,3 +81,59 @@ divideButton.addEventListener('click', () => {
 
     divideAnswer.textContent = divided;
 })
+
+
+
+// start of remainder
+
+import {remainder} from './calculator.js';
+
+const remainderNumber1 = document.getElementById('val9');
+const remainderNumber2 = document.getElementById('val10');
+const remainderButton = document.getElementById('remainder-button');
+const remainderAnswer = document.getElementById('remainder-answer');
+
+
+remainderButton.addEventListener('click', () => {
+    const num1 = remainderNumber1.value;
+    const num2 = remainderNumber2.value;
+    const remainderVar = remainder(num1, num2);
+
+    remainderAnswer.textContent = remainderVar;
+})
+// start of integer
+
+import {integer} from './calculator.js';
+
+const integerNumber1 = document.getElementById('val11');
+const integerNumber2 = document.getElementById('val12');
+const integerButton = document.getElementById('integer-button');
+const integerAnswer = document.getElementById('integer-answer');
+
+
+integerButton.addEventListener('click', () => {
+    const num1 = integerNumber1.value;
+    const num2 = integerNumber2.value;
+    const integerVar = integer(num1, num2);
+
+    integerAnswer.textContent = integerVar;
+});
+
+
+// start of integer
+
+import {pythag} from './calculator.js';
+
+const pythagNumber1 = document.getElementById('val13');
+const pythagNumber2 = document.getElementById('val14');
+const pythagButton = document.getElementById('pythag-button');
+const pythagAnswer = document.getElementById('pythag-answer');
+
+
+pythagButton.addEventListener('click', () => {
+    const num1 = pythagNumber1.value;
+    const num2 = pythagNumber2.value;
+    const pythagVar = pythag(num1, num2);
+
+    pythagAnswer.textContent = pythagVar;
+});
