@@ -62,3 +62,22 @@ subtractButton.addEventListener('click', () => {
 
     subtractAnswer.textContent = subtracted;
 })
+
+// start of divide
+
+import {divide} from './calculator.js';
+
+const divideNumber1 = document.getElementById('val7');
+const divideNumber2 = document.getElementById('val8');
+const divideButton = document.getElementById('divide-button');
+const divideAnswer = document.getElementById('divide-answer');
+
+
+divideButton.addEventListener('click', () => {
+    const num7 = divideNumber1.value;
+    const num8 = divideNumber2.value;
+
+    const divided = divide(num7, num8);
+
+    divideAnswer.textContent = divided;
+})

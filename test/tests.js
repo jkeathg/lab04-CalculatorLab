@@ -55,3 +55,18 @@ test('subtract two numbers', (expect) => {
     expect.equal(actual3, expected3);
 
 });
+
+
+// divide
+
+import {divide} from '../calculator.js';
+
+test('divide two numbers', (expect) =>{
+    const e = 8;
+    const f = 2;
+    const expected4 = 4;
+
+    const actual4 = divide(e, f);
+
+    expect.equal(actual4, expected4);
+});

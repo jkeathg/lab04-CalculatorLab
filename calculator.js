@@ -17,3 +17,7 @@ export function multiply(n3, n4) {
 export function subtract(n5, n6) {
     return n5 - n6;
 }
+
+export function divide(n7, n8) {
+    return n7 / n8;
+}

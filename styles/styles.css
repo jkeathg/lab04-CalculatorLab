@@ -16,8 +16,12 @@ main {
 }
 
 .container {
-    background-color: gray;
+    background-color: #A2C2D7;
     padding: 15px;
+    border-color: #A2D7B8;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 4px;
 }
 
 header {
